@@ -2,22 +2,16 @@ const URL = "https://instaclone-nodejs-amaan.onrender.com";
 
 export function getPost(){
     return fetch(`${URL}/posts`)
-    .then((res)=>{
-        res.json();
-    }).catch((error) => {
-        alert(error.message);
-    })
+    .then(res => res.json())
+    .catch(error => alert(error.message))
 };
 
 export function newPost(post){
     return fetch(`${URL}/post`,{
-        method: "Post",
+        method: "POST",
         body: post
     })
-    .then((res)=>{
-        res.json();
-    }).catch((error) => {
-        alert(error.message);
-    })
+    .then(res => res.json())
+    .catch(error => alert(error.message))
 };
 
