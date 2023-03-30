@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes ,Route } from "react-router-dom";
-import Landing from "../routes/Landing";;
+import Landing from "../routes/Landing";
 import NewPost from "../routes/NewPost";
 import PostView from "../routes/PostView";
 import ViewPost from "../routes/Viewpost";
