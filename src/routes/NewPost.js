@@ -22,7 +22,8 @@ export default function NewPostForm(){
         post.append("date", new Date().toDateString());
         post.append("id", Date.now());
 
-        newPost(post).then((res) => {
+        newPost(post)
+        .then((res) => {
             if(res.status === "Success"){
                 addNewPost(res.result);
                 setFormData({

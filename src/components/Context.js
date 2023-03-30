@@ -8,9 +8,7 @@ export default function Context({children}){
     const [posts, setPosts] = useState([]);
     useEffect(()=>{
         getPost()
-        .then((res)=>{
-            setPosts(res.result.reverse());
-        })
+        .then(res => setPosts(res.result.reverse()))
     }, []);
     return <List.Provider value={{
         posts: posts,
