@@ -1,10 +1,10 @@
-const URL = "https://instaclone-nodejs-knen.onrender.com";
+const URL = "https://instaclone-nodejs-amaan.onrender.com";
 
 
 export function getPost(){
     return fetch(`${URL}/posts`)
-    .then(res => res.json())
-    .catch(error => alert(error.message))
+    .then(res=>res.json())
+    .catch(err=>alert(err.message))
 };
 
 export function newPost(post){
