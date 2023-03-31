@@ -1,5 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 export default function Landing(){
     return <div className="home">
         <div className="contents">
@@ -14,4 +18,4 @@ export default function Landing(){
             </div>
         </div>
     </div>
-}
+};
