@@ -1,5 +1,6 @@
 const URL = "https://instaclone-nodejs-knen.onrender.com";
 
+
 export function getPost(){
     return fetch(`${URL}/posts`)
     .then(res => res.json())

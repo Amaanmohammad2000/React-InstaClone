@@ -2,6 +2,7 @@ import React from "react";
 import {IoMdPaperPlane} from "react-icons/io";
 import {BsHeart} from "react-icons/bs";
 
+
 export default function Posts({post}){
     const {name, location, image, likes, description, date} = post;
 

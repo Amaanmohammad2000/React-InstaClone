@@ -10,6 +10,7 @@ export default function NewPostForm(){
         author: "",
         location: "",
         description: ""
+        
     })
     const navigate = useNavigate();
     const {addNewPost} = useContext(List);
