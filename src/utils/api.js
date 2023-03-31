@@ -1,4 +1,4 @@
-const URL = "https://instaclone-nodejs-amaan.onrender.com";
+const URL = "https://instaclone-nodejs-amaan-gqma.onrender.com";
 
 export function getPost(){
     return fetch(`${URL}/posts`)
