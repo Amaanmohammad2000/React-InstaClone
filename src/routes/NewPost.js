@@ -6,7 +6,7 @@ import {List} from "../components/Context";
 
 export default function NewPostForm(){
     const [formData, setFormData] = useState({
-        image: "",
+        PostImage: "",
         author: "",
         location: "",
         description: ""
@@ -27,7 +27,7 @@ export default function NewPostForm(){
             if(res.status === "Success"){
                 addNewPost(res.result);
                 setFormData({
-                    image: "",
+                    PostImage: "",
                     author: "",
                     location: "",
                     description: ""
@@ -47,7 +47,7 @@ export default function NewPostForm(){
                         setFormData(input => {
                            return { 
                             ...input,
-                            image : e.target.files[0]
+                            PostImage : e.target.files[0]
                         }})
                     }}/>
                 </div>
