@@ -18,7 +18,7 @@ export default function Posts({post}){
                 </div>
             </header>
             <section className="image">
-                <img className="post-image" src={`https://instaclone-nodejs-knen.onrender.com/${image}`} alt=""></img>
+                <img className="post-image" src={`https://instaclone-nodejs-amaan.onrender.com/${image}`} alt=""></img>
             </section>
             <footer>
             <div className="likes-info">
