@@ -2,8 +2,9 @@ import React from "react";
 import {IoMdPaperPlane} from "react-icons/io";
 import {BsHeart} from "react-icons/bs";
 
+
 export default function Posts({post}){
-    const {name, location, PostImage, likes, description, date} = post;
+    const {name, location, image, likes, description, date} = post;
 
     return <div>
         <div className="posts">
@@ -17,7 +18,7 @@ export default function Posts({post}){
                 </div>
             </header>
             <section className="image">
-                <img className="post-image" src={`https://instaclone-nodejs-amaan.onrender.com/${PostImage}`} alt=""></img>
+                <img className="post-image" src={`https://instaclone-nodejs-knen.onrender.com/${image}`} alt=""></img>
             </section>
             <footer>
             <div className="likes-info">
